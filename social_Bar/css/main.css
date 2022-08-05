@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+}
+.social_media{
+    width: 400px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+ul li .fa-brands{
+    font-size: 3rem;
+    -webkit-text-stroke: 2px var(--clr);
+    color: transparent;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 4px solid var(--clr);
+}
